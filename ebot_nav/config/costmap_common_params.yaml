@@ -1,0 +1,15 @@
+#test obstacle and raytrace
+obstacle_range: 6.0
+raytrace_range: 8.5
+footprint: [[0.34, -0.26], [0.34, 0.26], [-0.43, -0.26], [-0.43, 0.26]]
+transform_tolerance: 0.5
+
+observation_sources: /ebot/laser/scan
+
+/ebot/laser/scan:
+  data_type: sensor_msgs/LaserScan
+  topic: /ebot/laser/scan
+  marking: true
+  clearing: true
+
+map_type: costmap
